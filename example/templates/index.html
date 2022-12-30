@@ -1,0 +1,369 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <link rel="stylesheet" href="{% static 'styles.css'%}" />
+    <meta charset="UTF-8" />
+    <!-- -------------intern google font------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter:wght@600&family=Koulen&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- -----------------facebook link------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="home-section">
+      <div class="home" style="height:30px;">
+        <h4 style="margin-top:0px;">WELCOME  TO  ELIYA  EMPLOYEMENT  WORLD</h4>
+      </div>
+
+      <div class="eliya">
+        <div class="logo">
+          <img src="{% static 'image/logo1.png' %}" alt="" />
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <nav>
+            <!-- <a href="index.html"><img src="/image/logo.jpg" /></a> -->
+            <div class="nav-links">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="#">HOME</a></li>
+								<li><a href="#about">ABOUT US</a></li>
+								<li><a href="#services">SERVICES</a></li>
+								<li><a href="#franchise">FRANCHISE</a></li>
+                <li><a href="#ourpeople">OUR PEOPLE</a></li>
+                <li><a href="#contactus">CONTACT US</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+        </div>
+        <div class="icon">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------slide------------------- -->
+
+    <div class="slide">
+      <!-- --------------- Add Swiper HTML Layout------------------ -->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="{% static '/image/h1.jpeg'%}" alt="" /></div>
+          <div class="swiper-slide"><img src="{% static '/image/h2.jpeg'%}" alt="" /></div>
+          <div class="swiper-slide"><img src="{% static '/image/h3.jpeg'%}" alt="" /></div>
+          <div class="swiper-slide"><img src="{% static '/image/h4.jpeg'%}" alt="" /></div>
+          <div class="swiper-slide"><img src="{% static '/image/h5.jpeg'%}" alt="" /></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .slide {
+        width: 100%;
+        height: 80vh;
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper {
+        width: 80%;
+        height: 100%;
+      }
+      .swiper-slide img {
+        width: 90%;
+        /* height: 70%; */
+      }
+
+      .swiper .swiper-button-prev,
+      .swiper .swiper-button-next {
+        /* color: #fff; */
+      }
+      .swiper .swiper-pagination-bullet-active {
+        background-color: #fff;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      // ------------Initialize Swiper--------------
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+
+    <!-- --------------------ABOUT--------------------->
+		<div id="about">
+		<section class="about" >
+    <h2 style="text-align:center;"><span class="abouthead" style="color:black">ABOUT</span> <span>US</span></h2>
+      <div class="about-rows">
+        <img src="{% static 'image/2672335_low.png' %}" alt="" />
+        <p>
+          Eliya Employment World is a of the Unit/ Brand Value of Eliya Euphoria
+          Pvt Ltd Fouded By Anijit Banerjee & Co -Founded By Riya Narayan 2022
+        </p>
+        <br />
+        <p>
+          Eliya Employment World have Launch Our Two More Unit Of Eliya Employment
+          World named Employment world job portal for Skill Full Candidate and Job
+          seeker are Get Job On basis of there Skill Marking .Skill Hub Is for
+          Learning Skill Offline and Online Getting Trained Get Internship and
+          Placement as Well.
+        </p>
+        <br />
+        <p>
+          We <br />
+          belive that We will change the Employment System .Our Job Portal is
+          for the Candidate to get job With Skill Exam And Skill Hub Where Student Get
+          Skill With internship and Placement Assistant.Our product and job
+          job portal having AI based technology and Smart Product Is Perfect Solution of
+          Employer And Candidate.Skill Hub is Perfect Solution Get Skills.
+        </p>
+        <!-- <a href="">Mission And Vision</a> -->
+      </div>
+		</section>
+		</div>
+    <!-- --------------mission and vision------------>
+    <section class="mission" style="text-align:center;">
+    <B>  <h2>Mis<span class="missionhead">sion  And  Vis</span>ion</h2></B>
+      <p style="font-size:18px;">
+				"Eliya Employment World is  Ultimate Solution for Employer</br> 
+				and Job Seeker and Student.We solve  the Unemployment <br>
+				 problem..With Our various Product and App Student /<br>
+					Job Seeker Get Trained with Skills as well as get Job on Basis<br>
+					 of thier Set of Skills and Company /Employer Are Get Employees <br>
+					 With Set of Skill"
+      </p>
+    </section>
+		<!-- ------------------Products and services----------- -->
+		<div id="services">
+        <div class="pcontainer">
+            <h2>Products And Services</h2>
+           
+              <div class="prow">
+                <div class="pcol">
+                  <img  src="{% static 'image/skillhub.jpeg' %}" alt="" />
+                  <p>The Skill Hub</p>
+                  <button><a href="SkillHub.html"> Know More</a></button>
+                </div>
+                <div class="pcol">
+                  <img  src="{% static 'image/emp.jpeg' %}" alt="" />
+                  <p> Employment World </p>
+                  <button><a href="EmploymentWorld.html"> Know More</a></button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+		</div>
+		<!-- -----------------------OUR PEOPLE------------ -->
+		<div id="ourpeople">
+	<h2 style="margin-top:130px;"><b><center>O<span style="border-bottom: 1px solid #2cd4d9;
+    line-height: 48px;">ur Peop</span>le</b></h2>
+		<div id="ourpeople" class="ourpeople">
+			<div class="people">
+					<div class="slidecontainer swiper">
+				<div class="slidecontent">
+						<div class="card-wrapper swiper-wrapper">
+	
+							<div class="card swiper-slide" style="align-content: margin-left">
+								<div class="image-content">
+									<span class="overlay"> </span>
+									<div class="card-image">
+											 <img src="{% static 'image/employee.jpeg' %}" alt="" class="card-img">
+									</div>
+								</div>
+								<div class="card-content">
+									<h2 class="name"> John </h2>
+									<p class="description">dfghjklcvbnmdfghjksdfghjkvb</p>
+									<button class="button">View More</button>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			
+			</div>
+		</div>
+		</div>
+		<!-- ---------------------package----------------- -->
+    <section class="packages">
+      <h2 style="text-align:center; margin-top:100px;"><b><span style=" border-bottom: 1px solid #2cd4d9;
+      line-height: 48px;">Packages</span></b></h2>
+      <div class="packages-container">
+      <div class="packages-row">
+      <div class="packages-row1" >
+      <img src="{% static 'image/p1.jpeg' %}" alt="">
+      <p>Employer/ Companies
+        <span style="color:white; font-size:15px;">Know More</span>
+      </p>
+      
+    </div>
+    <div class="packages-row2">
+      <img src="{% static 'image/p2.jpeg' %}" alt="">
+      <p> Vertual Staffing<br> 
+          <span style="color:white; font-size:15px;">Know More</span>
+      </p>
+    </div>
+  </div>
+</div>
+      <!---------------Franchise------->
+      <div id="Franchise" >
+        <h2 style="text-align:center"><b>Franchi<span style="border-bottom: 1px solid #2cd4d9;
+          line-height: 48px;">se And Affiliate  </span>Partners</h2></b> 
+      <div class="partners" style="margin-top:100px;">
+      <div class="onlinefranch">
+        <img src="{% static 'image/online.jpeg' %}">
+        <p style="text-align: center;margin-top:15px;"><b>Online Franchise</b></p>
+        <button> Know More</a></button>
+      </div>
+      <div class="offlinefranch">
+      <img src="{% static 'image/franchise.jpeg' %}">
+      <p style="text-align: center;margin-top:15px;"><b>Offline Franchise</b></p>
+      <button> Know More</a></button>  
+    </div>
+      <div class="affiliate">
+        <img src="{% static 'image/f1.jpeg' %}">
+        <p style="text-align: center;margin-top:15px;"><b>Affiliate Franchise</b></p>
+        <button> Know More</a></button>
+      </div>
+    </div>
+      </div>
+    </section>
+    <!---------------Company Policies------------>
+    <div style="margin-top:430px;" >
+        <h2 style="text-align:center"><b><span style="border-bottom: 1px solid #2cd4d9;
+          line-height: 48px;">Company Policies  </span></h2></b>
+          <h1><b><center>Future</center></b></h1>
+          <div class="policies" >
+            
+            
+          </div>
+    </div>
+    
+		<!--------------Contact Us-------------->
+		<div id="contactus">
+		<div class="container" style="margin-top:160px;">
+      <center>
+        <h3>
+          <b>Join The Best.<span style="color: #2cd4d9;"> Be The Best </span>
+          </b>
+        </h3>
+        <h1><span class="line">Contact </span> Us</h1>
+      </center>
+      <center><p>Any Question or remarks? Just write us a message</p></center>
+    </div>
+    <div class="concontainer" style="margin-top:10px;">
+      <div class="leftcontact" style="margin-left: 20px;">
+        <h3><b><span class="line"style="margin-left: 20px;">Contact Information</b></h3></span>
+        <p style="margin-left: 20px;">
+          Fill up the form and our team will get back to you within 24 hours.
+        </p>
+				<p style="margin-left: 20px;">Main Office Address - Siliguri,West Bengal pin - 734006</p>
+				<h3><span class="line" style="margin-left: 20px;">Enquiry</span></h3>
+				<p style="margin-left: 20px;">Payrole@eliyaemploymentworld.co.in</p>
+				<p style="margin-left: 20px;">Virtual@eliyaemploymentworld.co.in</p>
+				<p style="margin-left: 20px;">Franchise@eliyaemploymentworld.co.in</p>
+				<h3><span class="line" style="margin-left: 20px;">Complaint</span></h3>
+				<p style="margin-left: 20px;">support@eliyaemploymentworld.co.in</p>
+      </div>
+      <div class="rightcontact">
+     <form class="form-inline" name="contactform" action="" onsubmit="return formValidator();" method="POST" >
+      {% csrf_token %}
+      <table class="frmtbl" >
+<tr><td>
+        <label>First Name:</label></td>
+    <td> 
+        <label >Last Name:</label></td></tr>
+<tr><td >    
+       <input type="text" id="fname" name="fname" required></td>
+    <td >
+       <input type="text" id="lname" name="lname" required></td></tr>
+<tr><td> 
+      <label>Mail:</label></td>
+<td><label >Contact No:</label></td></tr>
+<tr><td ><input type="text" id="email_id" name="email" required></td>
+          <td >
+              <input type="text" id="phone" name="phone" required></td></tr>
+              
+  <tr><td colspan="2">
+        <textarea style="width: 100%; height:70px; background-color:black; margin-top:30px; color:white;" placeholder="Message" name="message" id="message">Message</textarea></td></tr>
+         
+             <tr><td colspan="2">
+                  <button class="Button" >Button</button>
+                </td></tr>
+</table>
+</form>
+</div>
+    </div>
+		
+    </div>
+    <!-------Our Partners & Associated Companies------>
+    <div style="margin-top:430px;" >
+        <h2 style="text-align:center"><b>Our Partners &<span style="color: #2cd4d9;">Associated Companies </span></h2></b>
+          <div class="policies" >
+            
+          </div>
+    </div>
+    
+
+
+		<script src="{% static 'image/ src/index.js"></script>
+		
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

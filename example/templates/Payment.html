@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <div class="payment">
+      <h1>Payment</h1>
+      <div class="row">
+        <div class="col">
+          <img src="/image/15.jpg" alt="" />
+        </div>
+        <div class="col">
+          <div class="col1">
+            <p>Razor Pay Integrate</p>
+            <p>
+              Easy Emi <br />
+              Credit Card
+            </p>
+          </div>
+          <div class="col2">
+            <p>Cash Deposit</p>
+            <p>QR code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      h1 {
+        text-align: center;
+        margin: 32px;
+        color: rgb(15, 176, 239);
+      }
+      .payment {
+        height: 100vh;
+        width: 100vw;
+      }
+      .row {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        /* padding: 0 20px; */
+      }
+      .col {
+        display: flex;
+        background: red;
+      }
+      .col img {
+        height: 284px;
+        width: 284px;
+      }
+      .col1 {
+        background-color: aqua;
+      }
+      .col1 p {
+        border-radius: 50px 0 0 0;
+      }
+      .col2 {
+        /* background-color: blue; */
+      }
+      .col2 p {
+        border-radius: 0 50px 0 0;
+      }
+      .col p {
+        color: #fff;
+        margin: 8px;
+        height: 144px;
+        width: 144px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </body>
+</html>
